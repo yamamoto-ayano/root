@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>くじ引きサイト</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ホーム画面 -->
+    <div id="homeScreen" class="screen">
+        <h1>ようこそ！</h1>
+        <button id="startButton">クジを引く</button>
+    </div>
+
+    <!-- クジ画面 -->
+    <div id="lotteryScreen" class="screen" style="display:none;">
+        <h1>クジをクリックして結果を確認しましょう！</h1>
+        <div id="lotteryContainer" class="lottery-container">
+            <!-- ここにクジ画像が挿入されます -->
+        </div>
+    </div>
+
+    <!-- 結果画面 -->
+    <div id="resultScreen" class="screen" style="display:none;">
+        <h1>結果は...</h1>
+        <img id="resultImage" alt="結果画像" class="result-image">
+        <p id="resultText"></p>
+        <button id="backButton">ホームに戻る</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
